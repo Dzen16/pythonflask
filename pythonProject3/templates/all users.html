@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>All users</h1>
+    {% for i in a %}
+        <a href="/user/{{i['id']}}">{{i['name']}} {{i['surname']}} <br></a>
+    {% endfor %}
+</body>
+</html>
